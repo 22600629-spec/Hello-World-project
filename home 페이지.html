@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f5dede;
+        font-family: "pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0%;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 30px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: min(90%, 320px);
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px;
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+      .vending-machine {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        z-index: 1;
+      }
+      .vending-machine img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+      }
+      .vending-btn {
+        position: absolute;
+        width: 140px ;
+        height: 30px ;
+        background-color: #c9c5c5;
+        border: 1px solid #333;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+      .vending-btn:hover {
+        background-color: #5c5c5c;
+      }
+      .btn-1 { bottom: 79%; right: 70%; }
+      .btn-2 { bottom: 79%; right: 57.5%; }
+      .btn-3 { bottom: 79%; right: 45%; }
+      .btn-4 { bottom: 79%; right: 32.5%; }
+      .btn-5 { bottom: 79%; right: 20%; }
+      .btn-6 { bottom: 67.5%; right: 70%; }
+      .btn-7 { bottom: 67.5%; right: 57.5%; }
+      .btn-8 { bottom: 67.5%; right: 45%; }
+      .btn-9 { bottom: 67.5%; right: 32.5%; }
+      .btn-10 { bottom: 67.5%; right: 20%; }
+     
+      @media (max-width: 900px){
+        header {padding: 0 20px;}
+        nav a{font-size:13px;margin-right:12px}
+        .nav { gap: 10px; }
+        header h1{font-size:18px}
+        .container{padding:24px}
+      }
+
+      @media (max-width: 600px){
+        header{height:auto; padding:12px 16px; align-items:flex-start}
+        header h1{position:static; transform:none; text-align:center; width:100%; margin:8px 0}
+        .nav{flex-wrap:wrap; gap:8px}
+        .title-box{height:56px; font-size:18px}
+        .container{margin:20px auto; padding:16px}
+      }
+      @media (max-width: 1200px) {
+  .vending-machine { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="#">HOME</a>
+        <a href="#">REVIEW</a>
+        <a href="#">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+      
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+      <h4 style="font-weight: lighter; text-align: center;">사랑하는 이에게 선물과 아름다운 추억을 주길 바라며</h5>
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기.png" alt="자판기" style="display: block; margin: 0 auto;"/>
+
+          <button class="vending-btn btn-1" onclick="location.href='강아지.webp'">친구 friend</button>
+          <button class="vending-btn btn-2" onclick="location.href='#'">딸 daughter</button>
+          <button class="vending-btn btn-3" onclick="location.href='#'">아들 son</button>
+          <button class="vending-btn btn-4" onclick="location.href='#'">부모님 parents</button>
+          <button class="vending-btn btn-5" onclick="location.href='#'">나 me</button>
+          <button class="vending-btn btn-6" onclick="location.href='#'">동료 colleague</button>
+          <button class="vending-btn btn-7" onclick="location.href='#'">교수님 professer</button>
+          <button class="vending-btn btn-8" onclick="location.href='#'">여자친구 girlfriend</button>
+          <button class="vending-btn btn-9" onclick="location.href='#'">남자친구 boyfriend</button>
+          <button class="vending-btn btn-10" onclick="location.href='#'">새섬 </button>
+      </section>
+    </main>
+  </body>
+</html>
