@@ -81,52 +81,16 @@
         display: block;
         margin: 0 auto;
       }
-
-      /* 반응형: 작은 화면에서 레이아웃 축소 */
-      @media (max-width: 900px) {
-        header {
-          padding: 0 20px;
-        }
-        nav a {
-          font-size: 13px;
-          margin-right: 12px;
-        }
-        .nav {
-          gap: 10px;
-        }
-        header h1 {
-          font-size: 18px;
-        }
-        .container {
-          padding: 24px;
-        }
-      }
-
-      @media (max-width: 600px) {
-        header {
-          height: auto;
-          padding: 12px 16px;
-          align-items: flex-start;
-        }
-        header h1 {
-          position: static;
-          transform: none;
-          text-align: center;
-          width: 100%;
-          margin: 8px 0;
-        }
-        .nav {
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        .title-box {
-          height: 56px;
-          font-size: 18px;
-        }
-        .container {
-          margin: 20px auto;
-          padding: 16px;
-        }
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -134,8 +98,8 @@
   <body>
     <header>
       <nav class="nav">
-        <a href="#">HOME</a>
-        <a href="#">REVIEW</a>
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
         <a href="#">LETTER</a>
       </nav>
 
@@ -147,7 +111,7 @@
 
       <section class="vending-machine">
         <!-- 자판기 이미지 -->
-        <img src="빈 자판기.png" alt="자판기" align="center" />
+        <img src="자판기2.png" alt="자판기" align="center" />
 
         <div class="product-box" style="top: 7%; left: 23%">
           <a
@@ -157,7 +121,7 @@
             <img src="비타민.jpg" alt="비타민" />
           </a>
           <div class="product-description">
-            <p><strong>비타민</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>비타민</strong></p>
             <p>
               건강한 일상을 돕는 비타민입니다. 바쁜 새섬에게 활력을 주는
               실용적인 선물입니다.
@@ -173,7 +137,7 @@
             <img src="카메라.jpg" alt="카메라" />
           </a>
           <div class="product-description">
-            <p><strong>카메라</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>카메라</strong></p>
             <p>
               사진을 찍어 추억을 기록할 수 있는 카메라입니다. 새새의 추억을
               남기는 데 도움이 되는 선물입니다.
@@ -189,7 +153,7 @@
             <img src="꽃다발.jpg" alt="꽃다발" />
           </a>
           <div class="product-description">
-            <p><strong>꽃다발</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>꽃다발</strong></p>
             <p>
               아름다운 꽃다발은 기분을 좋게 하고, 평범한 날도 특별하게 만드는
               선물입니다. 새섬에게 따뜻한 마음을 전하는 선물입니다.
