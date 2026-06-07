@@ -105,57 +105,15 @@
       }
 
       .product-description {
-        font-size: 15px;
+        border-radius: 10px;
+        font-size: 12px;
         line-height: 1.5;
         color: #333;
-        max-width: 400px;
-      }
-
-      /* 반응형: 작은 화면에서 레이아웃 축소 */
-      @media (max-width: 900px) {
-        header {
-          padding: 0 20px;
-        }
-        nav a {
-          font-size: 13px;
-          margin-right: 12px;
-        }
-        .nav {
-          gap: 10px;
-        }
-        header h1 {
-          font-size: 18px;
-        }
-        .container {
-          padding: 24px;
-        }
-      }
-
-      @media (max-width: 600px) {
-        header {
-          height: auto;
-          padding: 12px 16px;
-          align-items: flex-start;
-        }
-        header h1 {
-          position: static;
-          transform: none;
-          text-align: center;
-          width: 100%;
-          margin: 8px 0;
-        }
-        .nav {
-          flex-wrap: wrap;
-          gap: 8px;
-        }
-        .title-box {
-          height: 56px;
-          font-size: 18px;
-        }
-        .container {
-          margin: 20px auto;
-          padding: 16px;
-        }
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -163,8 +121,8 @@
   <body>
     <header>
       <nav class="nav">
-        <a href="#">HOME</a>
-        <a href="#">REVIEW</a>
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
         <a href="#">LETTER</a>
       </nav>
 
@@ -176,7 +134,7 @@
 
       <section class="vending-machine">
         <!-- 자판기 이미지 -->
-        <img src="빈 자판기.png" alt="자판기" align="center" />
+        <img src="자판기2.png" alt="자판기" align="center" />
 
         <div class="product-box" style="top: 7%; left: 23%">
           <a
@@ -185,7 +143,7 @@
             <img src="rc카.jpg" alt="rc카" />
           </a>
           <div class="product-description">
-            <p><strong>rc카</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>rc카</strong></p>
             <p>
               직접 조종이 가능한 rc카입니다. 자동차에 관심이 있는 아들을 위한
               흥미로운 선물입니다.
@@ -201,7 +159,7 @@
             <img src="드론.jpg" alt="드론" />
           </a>
           <div class="product-description">
-            <p><strong>드론</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>드론</strong></p>
             <p>
               항공 촬영이 가능한 드론입니다. 아들에게 즐거움을 주는 이상적인
               선물입니다.
@@ -217,7 +175,7 @@
             <img src="화분.jpg" alt="화분" />
           </a>
           <div class="product-description">
-            <p><strong>화분</strong></p>
+            <p style="font-size: 16px; margin: 5px;"><strong>화분</strong></p>
             <p>
               생명의 신비를 몸소 체험할 수 있는 화분입니다. 장기간 동안 아들과
               함께 생명을 기르며 유대감을 쌓을 수 있습니다.
