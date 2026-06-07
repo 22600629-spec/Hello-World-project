@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        background-color: #f5dede;
+        font-family:"pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+    
+      }
+
+      .container {
+        width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: 320px;
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+
+      .vending-machine {
+        position: relative;
+        margin-left: 20px;
+      }
+
+      .vending-machine img{
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .product-box {
+        position: absolute;
+        top: 7%;
+        left: 23%;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 12px;
+      }
+
+      .product-box img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+      }
+
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
+        <a href="문구추천.html">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기2.png" alt="자판기" align="center" />
+
+        <div class="product-box" style="top: 7%; left: 23%">
+          <a
+            href="https://www.ikea.com/kr/ko/p/lillabo-20-piece-basic-train-set-multicolour-70320055/?utm_source=google&utm_medium=organic-shopping&utm_campaign=shopping_feed&utm_content=free_google_shopping_clicks_Children%27sIKEA"
+            target="_blank"
+          >
+            <img src="기차놀이.jpg" alt="기차놀이" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>기차놀이</strong></p>
+            <p>
+              어린 아이라면 누구나 좋아하는 기차놀이입니다. 딸과 오랜 시간을
+              함께 보낼 수 있는 이상적인 선물입니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 20%; left: 23%">
+          <a
+            href="https://www.lego.com/ko-kr/product/lego-titanic-10294"
+            target="_blank"
+          >
+            <img src="레고.jpg" alt="레고" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>레고</strong></p>
+            <p>
+              다양한 구성으로 재미를 느낄 수 있는 레고입니다. 딸의 창의력 발달을
+              자극하는 유익한 선물입니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 32%; left: 23%">
+          <a
+            href="https://www.coupang.com/vp/products/8101632517?itemId=27437314648&vendorItemId=94402747129&src=1042503&spec=70304777&addtag=400&ctag=8101632517&lptag=I27437314648V94402747129A536777163R&itime=20260606232604&pageType=PRODUCT&pageValue=8101632517&wPcid=17807514802088600221174&wRef=www.google.com&wTime=20260606232604&redirect=landing&AdNodeId=536777163&gclid=Cj0KCQjwio_RBhDMARIsAJPveNN_Ib1cAQ_G5hX6SI-wSwgCKxr1grv1n_47yRTQ4h77crizsgcW538aAnbTEALw_wcB&mcid=898de6e7e88c41e0b839f14b1c1c92fe&campaignid=&adgroupid="
+            target="_blank"
+          >
+            <img src="미술도구.jpg" alt="미술도구" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>미술도구</strong></p>
+            <p>
+              상상력을 발전시킬 수 있는 미술도구입니다. 그림 그리는 것을
+              좋아하는 딸의 예술적 감각을 키우는 데 도움이 되는 선물입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

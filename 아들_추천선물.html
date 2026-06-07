@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        background-color: #f5dede;
+        font-family:"pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+    
+      }
+
+      .container {
+        width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: 320px;
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+
+      .vending-machine {
+        position: relative;
+        margin-left: 20px;
+      }
+
+      .vending-machine img{
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .product-box {
+        position: absolute;
+        top: 7%;
+        left: 23%;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 12px;
+      }
+
+      .product-box img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+      }
+
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
+        <a href="문구추천.html">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기2.png" alt="자판기" align="center" />
+
+        <div class="product-box" style="top: 7%; left: 23%">
+          <a
+            href="https://daehotoys.com/product/detail.html?product_no=980&srsltid=AfmBOoqRhT8uL3jeJUsA3zscOj-sLVkWt3-N5fDJlnB2IviN2r3U7-2b9QE"
+          target="_blank">
+            <img src="rc카.jpg" alt="rc카" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>rc카</strong></p>
+            <p>
+              직접 조종이 가능한 rc카입니다. 자동차에 관심이 있는 아들을 위한
+              흥미로운 선물입니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 20%; left: 23%">
+          <a
+            href="https://www.coupang.com/vp/products/9003894306?itemId=26385929239&vendorItemId=93362337861&src=1042503&spec=70304777&addtag=400&ctag=9003894306&lptag=I26385929239V93362337861A501150791R&itime=20260606221120&pageType=PRODUCT&pageValue=9003894306&wPcid=17807514802088600221174&wRef=www.google.com&wTime=20260606221120&redirect=landing&AdNodeId=501150791&gclid=Cj0KCQjwio_RBhDMARIsAJPveNOTrleXQ5BrfHMpvQm1KJL6rQ_Zgxp42QUK55EywGEKiqdENpMhfigaAhO9EALw_wcB&mcid=1789e9cf9c9a4419803833e71b6326d9&campaignid=&adgroupid="
+            target="_blank"
+          >
+            <img src="드론.jpg" alt="드론" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>드론</strong></p>
+            <p>
+              항공 촬영이 가능한 드론입니다. 아들에게 즐거움을 주는 이상적인
+              선물입니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 32%; left: 23%">
+          <a
+            href="https://store.ohou.se/goods/2021304?srsltid=AfmBOopS-cn4gUSPfKTpqV4zagPAG6KNjrp3igLkJ2_d9QJtukdwtYwuje4"
+            rel="noopener noreferrer" target="_blank"
+          >
+            <img src="화분.jpg" alt="화분" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>화분</strong></p>
+            <p>
+              생명의 신비를 몸소 체험할 수 있는 화분입니다. 장기간 동안 아들과
+              함께 생명을 기르며 유대감을 쌓을 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

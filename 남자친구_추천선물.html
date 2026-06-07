@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        background-color: #f5dede;
+        font-family:"pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+    
+      }
+
+      .container {
+        width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: 320px;
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+
+      .vending-machine {
+        position: relative;
+        margin-left: 20px;
+      }
+
+      .vending-machine img{
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .product-box {
+        position: absolute;
+        top: 7%;
+        left: 23%;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 12px;
+      }
+
+      .product-box img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+      }
+
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
+        <a href="문구추천.html">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기2.png" alt="자판기" align="center"/>
+
+        <div class="product-box" style="top: 7%; left:23%;">
+          <a href="https://www.idus.com/v2/product/462bfa5f-bed8-4a33-a823-c2ba335972c9" target="_blank">
+            <img src="시계.png" alt="시계" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>시계</strong></p>
+            <p>그 순간을 매일 손에 닿는 시계로 기념해보세요.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 20%; left:23%;">
+          <a href="https://www.ssfshop.com/LACOSTE/GQ2N26012338485/good?dspCtgryNo=SFMA46A14&brandShopNo=&brndShopId=&keyword=&leftBrandNM=&utag=ref_cat:SFMA46A14$set:1$$dpos:27" target="_blank" rel="noopener noreferrer">
+            <img src="지갑.png" alt="지갑" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>지갑</strong></p>
+            <p>가장 오래 기억을 담아, 깔끔한 디자인의 지갑을 선물해 보세요.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 32%; left:23%;">
+          <a href="https://www.coupang.com/np/search?component=&q=PRO+X+SUPERLIGHT+2+DEX&traceId=mq3eizgr&channel=user" target="_blank" rel="noopener noreferrer">
+            <img src="마우스.png" alt="마우스" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>마우스</strong></p>
+            <p>편리한 사용감을 제공하는 마우스를 선물해 보세요.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

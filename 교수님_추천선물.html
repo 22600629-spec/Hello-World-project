@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        background-color: #f5dede;
+        font-family:"pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+    
+      }
+
+      .container {
+        width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: 320px;
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+
+      .vending-machine {
+        position: relative;
+        margin-left: 20px;
+      }
+
+      .vending-machine img{
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .product-box {
+        position: absolute;
+        top: 7%;
+        left: 23%;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 12px;
+      }
+
+      .product-box img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+      }
+
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
+        <a href="문구추천.html">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기2.png" alt="자판기" align="center"/>
+
+        <div class="product-box" style="top: 7%; left:23%;">
+          <a href="https://www.idus.com/v2/product/42aae573-7571-46ac-a048-09f168971245?search_word=%EB%B8%94%EB%A0%8C%EB%94%A9+%ED%8B%B0+%EC%84%B8%ED%8A%B8&keyword_channel=user" target="_blank">
+            <img src="티 세트.png" alt="티 세트" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>티 세트</strong></p>
+            <p>맛있는 차로 특별한 시간을 보내보세요.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 20%; left:23%;">
+          <a href="https://www.idus.com/v2/product/8033962f-cedb-4687-b11b-f1c8357ff42b?search_word=%EA%B0%80%EC%8A%B5%EA%B8%B0&keyword_channel=user" target="_blank">
+            <img src="가습기.png" alt="가습기" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>가습기</strong></p>
+            <p>편안한 실내 환경을 만들어주는 가습기입니다.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 32%; left:23%;">
+          <a href="https://www.idus.com/v2/product/ab21a1c9-4bbe-4d89-b3d2-97e1c2ce27f8?search_word=%EB%A9%94%EC%8B%9C%EC%A7%80+%EC%95%A1%EC%9E%90&keyword_channel=user" target="_blank" rel="noopener noreferrer">
+            <img src="액자.jpg" alt="액자" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>액자</strong></p>
+            <p>아름다운 디자인의 액자로 감동을 선물하세요.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
