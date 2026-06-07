@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      body {
+        background-color: #f5dede;
+        font-family:"pretendard", sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        background-color: #d8b6b6;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        position: relative;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 18px;
+      }
+
+      header h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        letter-spacing: 2px;
+    
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        min-height: 700px;
+        margin: 40px auto;
+        background: #f9f1eb;
+        border-radius: 25px;
+        padding: 40px;
+      }
+
+      .title-box {
+        max-width: 320px;
+        width: min(90%, 320px);
+        height: 60px;
+        margin: 0 auto 40px;
+        border: 3px solid #888;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        padding-left: 20px
+      }
+      .nav a {
+        color: #555;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        color: #000;
+      }
+
+      .vending-machine {
+        position: relative;
+      }
+
+      .vending-machine img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .product-box {
+        position: absolute;
+        top: 7%;
+        left: 23%;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0);
+        padding: 10px 12px;
+      }
+
+      .product-box img {
+        max-width: 120px;
+        height: auto;
+        display: block;
+        background-color: white;
+        opacity: 0.9;
+      }
+
+      .product-description {
+        border-radius: 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        width: 450px;
+        height: 100px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="review.html">REVIEW</a>
+        <a href="#">LETTER</a>
+      </nav>
+
+      <h1>PRESENT FOR YOU !!</h1>
+    </header>
+
+    <main class="container">
+      <div class="title-box">PRESENT FOR YOU !!</div>
+
+      <section class="vending-machine">
+        <!-- 자판기 이미지 -->
+        <img src="자판기2.png" alt="자판기" style="display: block; margin: 0 auto;"/>
+
+        <div class="product-box" style="top: 7%; left:23%;">
+          <a href="https://www.coupang.com/vp/products/8773794438?itemId=25522923201&vendorItemId=85927314908&q=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%ED%85%80%EB%B8%94%EB%9F%AC&searchId=45e588746631474&sourceType=search&itemsCount=60&searchRank=37&rank=37&traceId=mpzccgr0" target="_blank">
+            <img src="텀블러.png" alt="텀블러" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>텀블러</strong></p>
+            <p>커피와 차를 위한 실용적인 선물입니다. 비교적 부담스럽지 않은 선물이라 직장동료에게 적합합니다.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 19.5%; left:23%;">
+          <a href="https://zenyle.com/product/RFP" target="_blank">
+            <img src="만년필.jpg" alt="만년필" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>만년필</strong></p>
+            <p>고급스러운 느낌이 있어 감사나 축하의 의미를 전달하기 좋은 선물입니다. 승진, 입사, 이직 등 새로운 출발을 응원하는 의미를 담을 수 있으며, 전문적이고 신뢰감 있는 이미지를 더해줄 수 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="product-box" style="top: 31.5%; left:23%;">
+          <a href="https://www.29cm.co.kr/products/1246622" target="_blank" rel="noopener noreferrer">
+            <img src="조명.webp" alt="조명" />
+          </a>
+          <div class="product-description">
+            <p style="font-size: 16px; margin: 5px;"><strong>조명</strong></p>
+            <p>편안한 휴식을 위한 아이템 입니다. 인테리어 효과가 있어 사무실이나 집 공간을 더욱 아늑하게 만들어 줄 수 있습니다.</p> 
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
